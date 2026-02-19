@@ -1,13 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
   padding: 20px;
 }
 
 h1, h2 {
   text-align: center;
+  font-size: 34px;
 }
-
+h3{
+  font-size: 25px;
+  text-align: center;
+}
 form {
   background: white;
   padding: 15px;
@@ -54,4 +57,94 @@ th, td {
 .status-devolvido {
   color: red;
   font-weight: bold;
+}
+.estoque-container {
+  margin-top: 30px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.estoque-container table {
+  margin-top: 0;
+}
+
+.item-disponivel {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.item-indisponivel {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.botao-emprestar {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: auto;
+}
+
+.botao-emprestar:hover {
+  background: #45a049;
+}
+
+.botao-emprestar:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+.estoque-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.estoque-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.estoque-container table {
+  margin-top: 0;
+}
+
+.item-disponivel {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.item-indisponivel {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.botao-emprestar {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: auto;
+}
+
+.botao-emprestar:hover {
+  background: #45a049;
+}
+
+.botao-emprestar:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }

@@ -2,13 +2,28 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controle de Empréstimos</title>
   <link rel="stylesheet" type="text/css" href="page1.css">
 </head>
 <body>
 
   <h1>Sistema de Controle de Empréstimos</h1>
-
+  <h3>Itens Disponíveis no Estoque</h3>
+  <div class="estoque-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Categoria</th>
+          <th>Quantidade</th>
+          <th>Status</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody id="listaEstoque"></tbody>
+    </table>
+  </div>
   <form id="formEmprestimo">
     <input type="text" id="pessoa" placeholder="Nome da pessoa" required>
     <input type="text" id="objeto" placeholder="Objeto emprestado" required>
@@ -30,7 +45,9 @@
     </thead>
     <tbody id="listaEmprestimos"></tbody>
   </table>
-  <button onclick="testarConexao()">testar o java</button>
+  
+
+  <button onclick="testarConexao()"> </button>
   <script src="page1.js"></script>
 </body>
 </html>
